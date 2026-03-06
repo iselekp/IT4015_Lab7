@@ -1,5 +1,6 @@
 #Task 1 - printing a message
 print("Hello, Python World!")
+
 #Task 2.0 - creating variables
 name = "Karl Isele"
 age = 24
