@@ -27,17 +27,28 @@ else:
     print(str(number) + " is zero.")
 #Task 4.2 - looping flow control
 print("My favorite foods are ", end='')
-i = 1
+#Counter for tracking what list item is being printed
+i = 0
 for food in favorite_foods:
     print(food, end='')
-    if i < len(favorite_foods) - 1:
+    #Print a comma after the list item for every item except the last two
+    if i < len(favorite_foods) - 2:
         print(", ", end='')
-    if i == len(favorite_foods) - 1:
+    #Print " and " after the second to last list item
+    if i == len(favorite_foods) - 2:
         print(" and ", end='')
     i = i + 1
 print(".")
 #Task 5 - defining a function
 def greet(name):
     print("Hello " + name)
+greet("Alice")
+greet("Bob")
+greet("Jane")
 #Task 6 - combining concepts
-
+def nameage():
+    greet(input("What is your name? "))
+    age = int(input("How many years old are you? "))
+    agePlus5 = age + 5
+    print("You will be " + str(agePlus5) + " years old in five years.")
+nameage()
